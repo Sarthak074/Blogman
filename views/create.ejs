@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tiny.cloud/1/46da9xabnbphbsave5g53uw6j581pyge4auuv5suz0lal1ij/tinymce/4/tinymce.min.js"></script>
+    <script>
+      tinymce.init({
+        selector: "#mytextarea",
+      });
+    </script>
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <h2 class="title-for-write">Write your blog here</h2>
+    <div class="con">
+      <form method="POST" action="/blog">
+        <textarea name="t1" id="mytextarea" cols="50" rows="35"></textarea>
+        <input type="submit" value="submit" class="submit" />
+      </form>
+    </div>
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

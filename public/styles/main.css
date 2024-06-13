@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  background-color: black;
+  color: aliceblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.con {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.blog-card {
+  text-align: center;
+  border-radius: 30px;
+  margin-right: 15px;
+  padding: 8px;
+  color: rgb(34, 33, 32);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+
+.options {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-self: center;
+  justify-self: flex-end;
+  margin-top: 1.5rem;
+}
+
+.logo {
+  margin-left: 3rem;
+  
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 3rem;
+  
+}
+
+.f-title{
+    font-size:x-large;
+    margin-top: 2rem;
+}
+
+.delete {
+  background-color: white;
+  border: none;
+  color: rgb(252, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.title-for-write {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.title-list {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.submit {
+  margin-top: 8px;
+  margin-left: 45%;
+  display: flex;
+  text-align: center;
+  background-color: black;
+  border: none;
+  color: aliceblue;
+  padding: 6px;
+  border-radius: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}

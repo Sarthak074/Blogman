@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+
+<h2 class="title-list">Your Blogs 👇</h2>
+<div class="blog-card">
+    <% if (data.length > 0) { %>
+        <% data.forEach((post, index) => { %>
+            <h3>Blog<%= index+1 %></h1>
+            <p class="blog-para"><%- post %></p>
+            <form action="/delete/<%= index %>" method="POST" class="del-button">
+                <button type="submit" class="delete">Delete Blog ❌</button>
+            </form>
+        <% }) %>
+  <% } else { %>
+  <p>No content submitted yet ⚠️</p>
+  <% } %>
+  <!-- <a href="/create" style="color: black; font-weight: bold; margin:2rem ;">Create a new blog post</a> -->
+</div>
+
+<!-- <%- include("partials/footer.ejs") %> -->
